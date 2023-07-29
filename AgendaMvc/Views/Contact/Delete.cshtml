@@ -1,0 +1,19 @@
+﻿@model Contact
+@{
+    ViewData["Title"] = "Deletar contato";
+}
+
+<h3>Deseja deletar o contato @Model.Name</h3>
+
+<div class="card">
+    <div class="card-body">
+        <p class="card-text"><b>Nome: </b>@Model.Name</p>
+        <p class="card-text"><b>Email: </b>@Model.Email</p>
+        <p class="card-text"><b>Telefone: </b>@Model.Phone</p>
+        <p class="card-text"><b>Grupo: </b>@Model.Group</p>
+        <p class="card-text"><b>Data de cadastro: </b>@Model.CreatedAt</p>
+        <a class="btn btn-danger" asp-controller="Contact" asp-action="DeleteContact" asp-route-id="@Model.Id" role="button">Deletar</a>
+    </div>
+</div>
+<br />
+<a class="btn btn-secondary" asp-controller="Contact" asp-action="Index" type="button" role="button">Voltar a listagem</a>

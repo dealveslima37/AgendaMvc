@@ -1,0 +1,43 @@
+﻿@model Contact
+@{
+    ViewData["Title"] = "Atualizar contato";
+}
+
+<div class="text-center">
+    <h2 class="mt-4">Alterar contato</h2>
+</div>
+<form asp-controller="Contact" asp-action="Update" method="post">
+    <input type="hidden" asp-for="Id" />
+    <div class="form-group">
+        <label asp-for="Name" class="control-label"></label>
+        <input asp-for="Name" class="form-control" />
+        <div class="text-danger"> @Html.ValidationMessageFor(x => x.Name)</div>
+    </div>
+    <div class="form-group">
+        <label asp-for="Email" class="control-label"></label>
+        <input asp-for="Email" class="form-control" />
+        <div class="text-danger"> @Html.ValidationMessageFor(x => x.Email)</div>
+    </div>
+    <div class="form-group">
+        <label asp-for="Phone" class="control-label"></label>
+        <input asp-for="Phone" class="form-control" />
+        <div class="text-danger"> @Html.ValidationMessageFor(x => x.Phone)</div>
+    </div>
+    <div class="form-group">
+        <label asp-for="Group" class="control-label">Selecione o grupo</label>
+        <select asp-for="Group" class="form-control form-select">
+            @foreach (var item in Enum.GetValues(typeof(AgendaMvc.Enums.ContactGroup)))
+            {
+                <option value="@item">@item</option>
+            }
+        </select>
+    </div>
+    <br />
+    <div class="form-group">
+        <button type="submit" class="btn btn-primary">Alterar</button>
+    </div>
+</form>
+<br />
+<div class="form-group">
+    <a role="button" class="btn btn-secondary" asp-controller="Contact" asp-action="Index">Voltar a lista</a>
+</div>

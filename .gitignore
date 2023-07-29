@@ -1,0 +1,85 @@
+# Arquivos gerados pelo Visual Studio
+*.obj
+*.pdb
+*.cache
+*.dll
+*.exe
+*.log
+*.vspscc
+*.vssscc
+*_i.c
+*_p.c
+*.ncb
+*.suo
+*.tlb
+*.tlh
+*.bak
+*.cache
+*.ilk
+*.meta
+*.mex*
+*.prv
+*.psess
+*.pubxml
+*.publishsettings
+*.svclog
+*.user
+*.vshost.*
+*.csproj.user
+*.iobj
+*.dbmdl
+*.opensdf
+*.tss
+
+# Pasta de resultados construídos
+[Bb]in/
+[Dd]ebug*/
+[Rr]elease*/
+
+# Arquivos específicos do Visual Studio
+.vs/
+/*.vsixmanifest
+*.builds
+
+# Arquivos de projeto
+*_ReSharper.*
+*.[Rr]e[Ss]harper
+[Tt]est[Rr]esult*
+*.csproj
+*.vbproj
+*.vcxproj
+*.vcproj
+*.dbproj
+*.fsproj
+*.lsproj
+*.wixproj
+*.pproj
+*.shproj
+*.xproj
+*.yproj
+*.modelproj
+*.deployproj
+*.azureproj
+*.sqlproj
+*.wwaproj
+*.wwwproj
+*.metaproj
+*.builds
+*.njsproj
+*.storyboard
+*.deployment
+*.testsettings
+*.sln.docstates
+
+# Pasta de ferramentas geradas
+_UpgradeReport_Files/
+Backup*/
+UpgradeLog*.XML
+UpgradeLog*.htm
+
+# Pasta de arquivos temporários
+[Tt]emp/
+[Oo]bj/
+
+# Logs de compilação
+msbuild*.txt
